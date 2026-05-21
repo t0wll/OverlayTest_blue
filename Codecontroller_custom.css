@@ -297,7 +297,9 @@
     width: 407px;
     background: url('');
     background-repeat: no-repeat;
-    -webkit-animation: rotation_hue 8.5s infinite linear;
+    animation: none !important;
+    -webkit-animation: none !important;
+    filter: none !important;
 }
 
 .custom .touchpad.pressed {
@@ -308,44 +310,4 @@
     width: 391px;
     background: url('https://i.imgur.com/fPJaOvH.png');
     background-repeat: no-repeat;
-}
-
-@keyframes rotation_hue {
-    0%,100% {
-        filter: saturate(1);
-        filter: brightness(.35);
-        transform: hue-rotate(359deg);
-    }
-
-    50% {
-        filter: saturate(50%);
-        filter: brightness(1.6);
-        transform: hue-rotate(0deg);
-    }
-}
-
-@keyframes Callback {
-    0% {
-        background-position: 108px -600px,0px 0px;
-    }
-
-    .5% {
-        background-position: 108px -600px,0px 0px;
-    }
-
-    1% {
-        background-position: 108px -150px,0px 0px;
-    }
-
-    1.2% {
-        background-position: 108px -150px,0px 0px;
-    }
-
-    1.7% {
-        background-position: 108px -600px,0px 0px;
-    }
-
-    100% {
-        background-position: 108px -600px,0px 0px;
-    }
 }
